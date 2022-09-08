@@ -1,23 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import {  BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import Home from './components/Home/Home'
+import Contact from './components/Contact/Contact';
+import About from './components/About/About';
+import Reviews from './components/Reviews/Reviews';
+import Navbar from './components/Navbar/Navbar';
+import Resturants from './components/Restuarants/Restuarants';
+import AddReviews from './components/AddReviews/AddReviews';
 
-function App() {
+
+
+   function App() {
+//   const [form, setForm] = useState({resturant: "", review:"", id:null })
+//   const [reviews, setReviews] = useState([])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      
+      <Navbar/>
+
+      <Routes>
+
+      <Route path='/' element={<Home />}/>
+      <Route path='About' element={<About />}/>
+      <Route path='Contact' element={<Contact />}/>
+      <Route path='Reviews' element={<Reviews />}/>
+      <Route path='add' element={<AddReviews />}/>
+      <Route path='Restaurants' element={<Resturants />}/>
+      
+      </Routes>
+      </BrowserRouter>
+
+
     </div>
   );
 }
