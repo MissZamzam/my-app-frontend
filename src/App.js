@@ -6,7 +6,7 @@ import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import Reviews from './components/Reviews/Reviews';
 import Navbar from './components/Navbar/Navbar';
-import Resturants from './components/Restuarants/Restuarants';
+import Books from './components/Books/Books';
 import AddReviews from './components/AddReviews/AddReviews';
 
 
@@ -28,7 +28,7 @@ import AddReviews from './components/AddReviews/AddReviews';
       <Route path='Contact' element={<Contact />}/>
       <Route path='Reviews' element={<Reviews />}/>
       <Route path='add' element={<AddReviews />}/>
-      <Route path='Restaurants' element={<Resturants />}/>
+      <Route path='Books' element={<Books />}/>
       
       </Routes>
       </BrowserRouter>
