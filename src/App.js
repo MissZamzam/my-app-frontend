@@ -12,7 +12,7 @@ import AddReviews from './components/AddReviews/AddReviews';
 
 
    function App() {
-//   const [form, setForm] = useState({resturant: "", review:"", id:null })
+//   const [form, setForm] = useState({book: "", review:"", id:null })
 //   const [reviews, setReviews] = useState([])
 
   return (
