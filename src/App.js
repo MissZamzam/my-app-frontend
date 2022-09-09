@@ -1,13 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import {  BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import Home from './components/Home/Home'
-import Contact from './components/Contact/Contact';
-import About from './components/About/About';
-import Reviews from './components/Reviews/Reviews';
-import Navbar from './components/Navbar/Navbar';
-import Books from './components/Books/Books';
-import AddReviews from './components/AddReviews/AddReviews';
+import {  BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Components/Home/Home'
+import Contact from './Components/Contact/Contact';
+import About from './Components/About/About';
+import Reviews from './Components/Reviews/Reviews';
+import Navbar from './Components/Navbar/Navbar';
+import Books from './Components/Books/Books';
+import AddReviews from './Components/AddReviews/AddReviews';
 
 
 

@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(198, 221, 213);
+    height: 100%;
+}
+h1{
+margin: 80px;
+font-size: 50px;
+}
+.about{
+    background-color: rgb(136, 199, 178);
+    font-size: 70px;
+    padding: 25px;
+    box-shadow: 1px 5px 5px rgb(10, 148, 141);
+}

@@ -8,7 +8,7 @@ const Books = () => {
   const [books, setBook] = useState([])
 
     useEffect(()=>{
-        fetch("")
+        fetch("http://localhost:9292/reviews")
         .then(res=>res.json())
         .then((data) =>
         setBook(data)   

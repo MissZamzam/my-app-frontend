@@ -6,7 +6,7 @@ function AddReviews(){
     const [users, setUsers] = useState([])
  
     useEffect(()=>{
-        fetch("")
+        fetch("http://localhost:9292/books")
         .then(res=>res.json())
         .then((data) =>
         setBooks(data)   
@@ -15,7 +15,7 @@ function AddReviews(){
     console.log(details)
 
     useEffect(()=>{
-        fetch("")
+        fetch("http://localhost:9292/users")
         .then(res=>res.json())
         .then((data) =>
         setUsers(data)   
@@ -49,7 +49,7 @@ function AddReviews(){
         };
 
     
-        fetch("",{
+        fetch("http://localhost:9292/reviews",{
           method: "POST",
           headers:{
             "Content-Type": "application/json",
@@ -64,7 +64,7 @@ function AddReviews(){
       }
     return (
         <div className="commentForm">
-         <h1>Add review</h1>
+         <h1>Your review</h1>
          <form className="Form">
             <label>Book</label>
             <select value={resoption} onchange={handleResChange} name={resoption}>

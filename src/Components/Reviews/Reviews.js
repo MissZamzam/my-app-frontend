@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import './Reviews.css'
-// import {FaTrash, FaEdit} from "react-icons/fa"
 
 function Reviews(){
     const [comments, setComments] =useState([])
@@ -9,7 +8,7 @@ function Reviews(){
         author:"", 
     })
     useEffect(()=>{
-        fetch("")
+        fetch("http://localhost:9292/books")
         .then((res)=> res.json())
         .then((data) =>{
          setComments(data)
