@@ -1,0 +1,32 @@
+.Form{
+    background-color: rgb(12, 60, 70);
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+     margin-left: 400px;
+   /* margin-right: 450px; */
+    border-radius: 10px;
+    padding: 40px;
+
+}
+textarea{
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+
+    
+}
+.submit{
+    margin: 20px;
+    padding: 10px;
+    font-size: 10px;
+}
+.submit:hover{
+    color: rgb(238, 241, 232);
+    background-color: rgb(65, 167, 65);
+    font-size: 40px;
+}
+.review{
+    padding: 20px;
+}

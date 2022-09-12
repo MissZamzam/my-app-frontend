@@ -6,4 +6,40 @@
 .displayComment{
     margin: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgb(13, 121, 121);
+    padding: 60px;
+    box-shadow: 15px 20px 15px;
+    width: 15%;
+    /* background-image: url(); */
+    
+}
+.box{
+    padding: 30px 190px;
+    border-radius: 10px;
+
+}
+.text{
+    padding: 10px 185px;
+    border-radius: 10px;
+
+
+}
+.submit{
+    padding: 30px 90px;
+    margin: 20px;
+    width: 200px;
+    background-color: rgb(19, 87, 30);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.edit{
+    font-size: 20px;
+    font-weight: 500;
+}
+button{
+    margin: 10px;
+    padding: 15px;
+    width: 120px;
+    border-radius: 8px;
 }

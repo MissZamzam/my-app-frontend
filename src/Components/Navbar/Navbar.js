@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function NavBar() {
     return(
         <div className="navbar">
-            <span className="nav-logo">Novellic</span>
+            <span className="nav-logo"><span className="span">N</span>ovellic</span>
             <div className="nav-items">
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>

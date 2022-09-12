@@ -1,3 +1,12 @@
 .home{
-    background-color: rgb(67, 206, 160);
+    /* background-color: rgb(67, 206, 160); */
+    margin: 260px;
+}
+.novel{
+    font-size: 90px;
+}
+span{
+    font-size: 200px;
+    font-style: italic;
+    color: teal;
 }

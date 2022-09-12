@@ -1,6 +1,7 @@
 import React from "react"
 import "./AddReviews.css"
 import {useEffect, useState} from "react"
+
 function AddReviews(){
     const [details, setBooks] = useState([])
     const [users, setUsers] = useState([])
@@ -49,7 +50,7 @@ function AddReviews(){
         };
 
     
-        fetch("http://localhost:9292/reviews",{
+        fetch("http://localhost:9292/books",{
           method: "POST",
           headers:{
             "Content-Type": "application/json",
@@ -66,11 +67,11 @@ function AddReviews(){
         <div className="commentForm">
          <h1>Your review</h1>
          <form className="Form">
-            <label>Book</label>
-            <select value={resoption} onchange={handleResChange} name={resoption}>
-                {details.map((detail)=>(<option key={detail.Id} >{detail.name}</option>))}</select>
+            <label>Review</label>
+            <select value={resoption} onchange={handleUserChange} name={resoption} className="review">
+                {details.map((detail)=>(<option key={detail.Id}>{detail.name}</option>))}</select>
 
-         <textarea value={body} placeholder="Comment"  type="text" name="text" rows="10"  onchange={handlBodyChange}></textarea><br/>
+         <textarea value={body} placeholder="Add your comment about the book"  type="text" name="text" rows="10"  onchange={handlBodyChange} className="textarea"></textarea><br/>
          <input type="submit"className="submit" onClick={handleSubmit} />
          </form>
      </div>

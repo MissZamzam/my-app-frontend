@@ -14,13 +14,13 @@ function Reviews(){
          setComments(data)
         },[comments,setComments])
         
-    });
+    },[]);
 
     const allComments = comments.map((comment) =>{
         return (
            <div key={comment.id} className="displayComment">
-                 <p >Name:  {comment.name}</p>
-                 <p >Author:  {comment.author}</p>
+                 <p className='edit'>Name:  {comment.name}</p>
+                 <p className='edit'>Author:  {comment.author}</p>
                  <button>Delete</button>
                  <button>Edit</button>
                  
@@ -42,8 +42,10 @@ function Reviews(){
           name:formData.name,
           author:formData.author
         };
+
+
     
-        fetch("",{
+        fetch("http://localhost:9292/reviews",{
           method: "POST",
           headers:{
             "Content-Type": "application/json",
@@ -66,10 +68,9 @@ function Reviews(){
 
      <div className="commentForm">
          <h1>Books</h1>
-         <h1>Add Book</h1>
          <form className="updateForm">
-         <textarea value={formData.name} placeholder="Name" name="name" onChange={handleCommentChange} rows="4" ></textarea><br/>
-         <input value={formData.author} placeholder="Author" name="author"  onChange={handleCommentChange}></input><br/>
+         <textarea value={formData.name} placeholder="Title" name="name" onChange={handleCommentChange} rows="4" className='text' ></textarea><br/>
+         <input value={formData.author} placeholder="Author" name="author"  onChange={handleCommentChange} className="box"></input><br/>
          <input type="submit"className="submit"  onClick={handleSubmit}/>
          </form>
          <hr></hr>

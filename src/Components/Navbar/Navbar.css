@@ -5,20 +5,35 @@
     justify-content: space-between;
     align-items: center;
     /* background: rgb(3, 55, 99); */
-    background-image: linear-gradient(315deg, #292a33 0%, #6c6e59c5 74%);
+    background-image: linear-gradient(315deg, #181a19fd 0%, #0d0e0dc5 74%);
     height: 15vh;
 }
 
 .navbar > .nav-logo {
     font-weight: 700;
-    font-size: 38px;
-    margin: 15px;
-    color: aliceblue;
+    font-size: 48px;
+    background-color: rgb(73, 119, 115);
+    padding: 30px;
+    padding-left: 100px;
+    margin: 10px;
+    color: rgb(227, 241, 241);
     margin-left: 60px;
+    border-radius: 15px;
+
+}
+.nav-logo:hover{
+    background-color: aliceblue;
+    color: rgb(24, 153, 46);
 }
 .nav-items{
     display: flex;
     margin-left: 160px;
+}
+.span{
+    color: black;
+    font-size: 120px;
+    font-style: oblique;
+    font-weight: 1400;
 }
 
 .navbar > .nav-items > a {

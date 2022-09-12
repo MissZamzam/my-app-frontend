@@ -1,14 +1,17 @@
 body{
-    background-color: rgb(198, 221, 213);
+    background-color: rgb(228, 238, 238);
     height: 100%;
 }
 h1{
 margin: 80px;
-font-size: 50px;
+font-size: 90px;
 }
 .about{
-    background-color: rgb(136, 199, 178);
+    background-color: rgb(93, 248, 227);
     font-size: 70px;
     padding: 25px;
-    box-shadow: 1px 5px 5px rgb(10, 148, 141);
+    box-shadow: 1px 25px 15px rgb(33, 75, 73);
+    border-radius: 10px;
+    margin: 170px;
+    color: rgb(23, 29, 34);
 }
