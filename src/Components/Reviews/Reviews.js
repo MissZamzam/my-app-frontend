@@ -8,7 +8,7 @@ function Reviews(){
         author:"", 
     })
     useEffect(()=>{
-        fetch("http://localhost:9292/books")
+        fetch("https://phase-3-project-backend.herokuapp.com/books")
         .then((res)=> res.json())
         .then((data) =>{
          setComments(data)
@@ -45,7 +45,7 @@ function Reviews(){
 
 
     
-        fetch("http://localhost:9292/reviews",{
+        fetch("https://phase-3-project-backend.herokuapp.com/books",{
           method: "POST",
           headers:{
             "Content-Type": "application/json",

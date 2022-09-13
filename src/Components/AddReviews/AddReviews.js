@@ -1,22 +1,20 @@
-import React from "react"
 import "./AddReviews.css"
 import {useEffect, useState} from "react"
-
 function AddReviews(){
-    const [details, setBooks] = useState([])
+    const [details, setBook] = useState([])
     const [users, setUsers] = useState([])
  
     useEffect(()=>{
-        fetch("http://localhost:9292/books")
+        fetch("https://phase-3-project-backend.herokuapp.com/books")
         .then(res=>res.json())
         .then((data) =>
-        setBooks(data)   
+        setBook(data)   
         )
     },[])
     console.log(details)
 
     useEffect(()=>{
-        fetch("http://localhost:9292/users")
+        fetch("https://phase-3-project-backend.herokuapp.com/users")
         .then(res=>res.json())
         .then((data) =>
         setUsers(data)   
@@ -50,7 +48,7 @@ function AddReviews(){
         };
 
     
-        fetch("http://localhost:9292/books",{
+        fetch("https://phase-3-project-backend.herokuapp.com/reviews",{
           method: "POST",
           headers:{
             "Content-Type": "application/json",
@@ -65,13 +63,13 @@ function AddReviews(){
       }
     return (
         <div className="commentForm">
-         <h1>Your review</h1>
+         <h1>Add review</h1>
          <form className="Form">
-            <label>Review</label>
-            <select value={resoption} onchange={handleUserChange} name={resoption} className="review">
-                {details.map((detail)=>(<option key={detail.Id}>{detail.name}</option>))}</select>
+            <label>Select Books</label>
+            <select value={resoption} onchange={handleResChange} name={resoption}>
+                {details.map((detail)=>(<option key={detail.Id} >{detail.name}</option>))}</select>
 
-         <textarea value={body} placeholder="Add your comment about the book"  type="text" name="text" rows="10"  onchange={handlBodyChange} className="textarea"></textarea><br/>
+         <textarea value={body} placeholder="Comment"  type="text" name="text" rows="10"  onchange={handlBodyChange}></textarea><br/>
          <input type="submit"className="submit" onClick={handleSubmit} />
          </form>
      </div>
