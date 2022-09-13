@@ -1,6 +1,7 @@
 import "./Comment.css"
 import React from "react"
 function Comment({author, name, body, user}){
+        
    return( <>
         <div className="singleComment">
         <p>Name: {name}</p>

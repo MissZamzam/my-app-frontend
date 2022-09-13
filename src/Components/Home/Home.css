@@ -1,3 +1,4 @@
+
 .home{
     /* background-color: rgb(67, 206, 160); */
     margin: 260px;
@@ -9,4 +10,30 @@ span{
     font-size: 200px;
     font-style: italic;
     color: teal;
+}
+p{
+    font-size: 40px;
+}
+.hr{
+    margin-top: 200px;
+}
+.icons{
+    margin: 100px;
+    /* background-color: teal; */
+    padding: 40px;
+}
+.face{
+    margin: 70px;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(9, 82, 87);
+    margin-left: 220px;
+
+}
+.face:hover{
+color: teal;
+/* background-color: rgb(134, 163, 153); */
+padding: 30px;
+/* border-b: 1px 20px green; */
+box-shadow: 1px 15px 10px teal;
 }

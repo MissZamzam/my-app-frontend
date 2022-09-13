@@ -7,6 +7,9 @@ function Reviews(){
         name:"",
         author:"", 
     })
+
+
+    
     useEffect(()=>{
         fetch("https://phase-3-project-backend.herokuapp.com/books")
         .then((res)=> res.json())
@@ -67,7 +70,7 @@ function Reviews(){
     return(
 
      <div className="commentForm">
-         <h1>Books</h1>
+         <h3>Books</h3>
          <form className="updateForm">
          <textarea value={formData.name} placeholder="Title" name="name" onChange={handleCommentChange} rows="4" className='text' ></textarea><br/>
          <input value={formData.author} placeholder="Author" name="author"  onChange={handleCommentChange} className="box"></input><br/>

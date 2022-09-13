@@ -32,7 +32,7 @@ const Books = () => {
     })
     return(
     <>
-    <div className="allCommnets">
+    <div className="allComments">
     {allComments}
     </div>
     </>
