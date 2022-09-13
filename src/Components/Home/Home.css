@@ -4,7 +4,7 @@
     margin: 260px;
 }
 .novel{
-    font-size: 90px;
+    font-size: 60px;
 }
 span{
     font-size: 200px;
@@ -18,7 +18,7 @@ p{
     margin-top: 200px;
 }
 .icons{
-    margin: 100px;
+    /* margin: 100px; */
     /* background-color: teal; */
     padding: 40px;
 }

@@ -15,7 +15,6 @@ const Home = () => {
        <div className='icons'>
         <p>“ So many books, so little time ” ~ Frank Zappa</p>
        
-
        </div>
     </div>
   )

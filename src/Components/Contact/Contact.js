@@ -6,15 +6,12 @@ return(
 
             <p>Emial Address</p>
             <h2>novellic@gmail.com</h2>
-            <h2>books@gmail.com</h2>
             <h2>digitallibrary@gmail.com</h2>
             <hr></hr>
             <hr></hr>
 
             <p>Telephone Number</p>
             <h2>07000000000</h2>
-            <h2>07123440000</h2>
-            <h2>+254 00000000</h2>
             <h2>020 00000000</h2>
             <hr></hr>
             <hr></hr>
