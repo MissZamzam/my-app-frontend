@@ -63,10 +63,12 @@ function AddReviews(){
       }
     return (
         <div className="commentForm">
-         <h1>Add review</h1>
+         <h2>Add review</h2>
+         <br></br>
+         <br></br>
          <form className="Form">
-            <label>Select Books</label>
-            <select value={resoption} onchange={handleResChange} name={resoption}>
+            <label className="select">Select Books</label>
+            <select value={resoption} onchange={handleResChange} name={resoption} className="box">
                 {details.map((detail)=>(<option key={detail.Id} >{detail.name}</option>))}</select>
 
          <textarea value={body} placeholder="Comment"  type="text" name="text" rows="10"  onchange={handlBodyChange}></textarea><br/>

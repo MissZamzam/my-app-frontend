@@ -1,13 +1,18 @@
 .Form{
-    background-color: rgb(12, 60, 70);
+    background-color: rgb(197, 210, 212);
     display: flex;
+    /* align-items: center; */
     flex-direction: column;
-    width: 60%;
-     margin-left: 400px;
+    width: 50%;
+     margin-left: 600px;
    /* margin-right: 450px; */
     border-radius: 10px;
     padding: 40px;
 
+}
+.select{
+    margin: 20px;
+    font-size: 30px;
 }
 textarea{
     margin-top: 100px;
@@ -18,9 +23,11 @@ textarea{
     
 }
 .submit{
+    align-items: center;
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
     font-size: 10px;
+    font-size: 20px;
 }
 .submit:hover{
     color: rgb(238, 241, 232);

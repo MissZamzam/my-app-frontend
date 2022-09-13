@@ -70,7 +70,7 @@ function Reviews(){
     return(
 
      <div className="commentForm">
-         <h3>Books</h3>
+         <h2>Books</h2>
          <form className="updateForm">
          <textarea value={formData.name} placeholder="Title" name="name" onChange={handleCommentChange} rows="4" className='text' ></textarea><br/>
          <input value={formData.author} placeholder="Author" name="author"  onChange={handleCommentChange} className="box"></input><br/>
