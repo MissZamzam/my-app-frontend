@@ -21,10 +21,7 @@
     border-radius: 15px;
 
 }
-.nav-logo:hover{
-    background-color: aliceblue;
-    color: rgb(24, 153, 46);
-}
+
 .nav-items{
     display: flex;
     margin-left: 100px;
